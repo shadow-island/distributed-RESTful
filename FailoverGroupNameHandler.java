@@ -1,4 +1,4 @@
-package com.userful.ucm.rest.handler.failover;
+package com.company.ucm.rest.handler.failover;
 
 import io.vertx.core.Handler;
 import io.vertx.core.http.HttpMethod;
@@ -10,18 +10,19 @@ import javax.inject.Singleton;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.eventbus.EventBus;
-import com.userful.ucc.model.shared.cluster.ClusterDTO;
-import com.userful.ucc.model.shared.cluster.ClusterID;
-import com.userful.ucc.model.shared.cluster.Clusters;
-import com.userful.ucc.msgs.shared.msg.cluster.ClusterMsgTypesToServer;
-import com.userful.ucm.dao.vertx.DAOFunctionType;
-import com.userful.ucm.dao.vertx.client.DAOFunctionClient;
-import com.userful.ucm.rest.RestRequest;
-import com.userful.ucm.rest.RestResponse;
-import com.userful.ucm.rest.handler.AbstractAuthRestHandler;
-import com.userful.ucm.rest.handler.RestHandlerManager;
-import com.userful.ucm.rest.msg.RestMessageBus;
-import com.userful.vertx.log.LogProvider;
+// changed 
+import com.company.ucc.model.shared.cluster.ClusterDTO;
+import com.company.ucc.model.shared.cluster.ClusterID;
+import com.company.ucc.model.shared.cluster.Clusters;
+import com.company.ucc.msgs.shared.msg.cluster.ClusterMsgTypesToServer;
+import com.company.ucm.dao.vertx.DAOFunctionType;
+import com.company.ucm.dao.vertx.client.DAOFunctionClient;
+import com.company.ucm.rest.RestRequest;
+import com.company.ucm.rest.RestResponse;
+import com.company.ucm.rest.handler.AbstractAuthRestHandler;
+import com.company.ucm.rest.handler.RestHandlerManager;
+import com.company.ucm.rest.msg.RestMessageBus;
+import com.company.vertx.log.LogProvider;
 
 @Singleton
 public final class FailoverGroupNameHandler extends AbstractAuthRestHandler {
